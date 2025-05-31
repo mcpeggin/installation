@@ -1,0 +1,11 @@
+res://World.tscn
+res://assets/wire/wire.gdshader
+res://scenes/orange_rope.tres
+res://scenes/dark_grid2.tres
+res://Player.tscn
+res://Bench.tscn
+res://WideBox.tscn
+res://HighBox.tscn
+res://assets/wire/WireShader.tscn
+res://scenes/path_3d_rope.tscn
+res://Stairs.tscn

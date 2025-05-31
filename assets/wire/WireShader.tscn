@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b54m703phym4d"]
+
+[ext_resource type="ArrayMesh" uid="uid://cpd6vps8r82q" path="res://assets/wire/wire.obj" id="1"]
+[ext_resource type="Shader" uid="uid://d2wgsdea36aqo" path="res://assets/wire/wire.gdshader" id="2"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+render_priority = 0
+shader = ExtResource("2")
+shader_parameter/width = 0.05
+shader_parameter/speed = 0.5
+shader_parameter/color = Color(0, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="1"]
+next_pass = SubResource("2")
+albedo_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+roughness = 0.45
+
+[node name="WireShader" type="Node3D"]
+
+[node name="Wire" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.489896, -1.72181, 0)
+visible = false
+material_override = SubResource("1")
+mesh = ExtResource("1")

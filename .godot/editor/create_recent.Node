@@ -1,0 +1,14 @@
+SpotLight3D
+CSGCombiner3D
+OmniLight3D
+RigidBody3D
+Skeleton3D
+CSGBox3D
+Node3D
+CSGMesh3D
+DirectionalLight3D
+WorldEnvironment
+Camera3D
+CollisionShape3D
+CharacterBody3D
+MeshInstance3D

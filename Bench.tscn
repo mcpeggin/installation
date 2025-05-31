@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl3ts88l18nvd"]
+
+[ext_resource type="Texture2D" uid="uid://bxb4pum3menwi" path="res://assets/textures/abstract-surface-wood-texture-background.jpg" id="1_qwlb0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ntju"]
+albedo_texture = ExtResource("1_qwlb0")
+albedo_texture_force_srgb = true
+
+[node name="Bench" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(0.130653, 0, 0, 0, 0.525568, 0, 0, 0, 0.476499, 0, 0.186835, -0.000806252)
+use_collision = true
+material = SubResource("StandardMaterial3D_2ntju")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.130653, 0, 0, 0, 0.525568, 0, 0, 0, 0.476499, 0.705346, 0.186835, -0.000806252)
+use_collision = true
+material = SubResource("StandardMaterial3D_2ntju")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.1, 0, 0, 0, 0.6, 0.345921, 0.468792, -0.00443439)
+use_collision = true
+material = SubResource("StandardMaterial3D_2ntju")
